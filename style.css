@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* heading section start */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(image/banner.png);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/* navigation section start */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+.navlink ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlink ul li a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+.navlink ul li ::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    transition: 0.5s;
+    display: block;
+    background:orange;
+    margin: auto;
+}
+.navlink ul li :hover::after{
+    width: 100%;
+}
+/* navigation section end */
+
+/* textbox section start */
+
+.textbox{
+    width: 90%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.textbox h1{
+    font-size: 50px;
+}
+.textbox p{
+    padding: 10px 0 34px;
+    font-size: 17px;
+    color: white;
+}
+.hero-btn{
+    font-size: 20px;
+    color: orange;
+    text-decoration: none;
+    border: 1px solid red;
+    padding: 12px 34px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    background-color: rgb(19, 83, 61);
+    transition: 0.5s;
+}
+/* textbox section end */
+
+/* heading section end */
+
+/* course section start */
+
+.course{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(190, 129, 247);
+    text-decoration: underline;
+
+}
+p{
+    font-size: 15px;
+    color: rgb(20, 19, 17);
+    padding: 10px;
+    font-weight: bold;
+
+}
+/* row section start */
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+/* col section start */
+
+.course-col{
+    flex-basis: 31%;
+    background-color: rgb(247, 219, 177);
+    border-radius: 10px;
+    padding: 20px 12px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 1s;
+
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: underline;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0 red;
+}
+
+/* course section end */
+
+/* footer section start */
+.footer{
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+    width: 100%;
+}
+.footer h2{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
